@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
             waitpid(pid2,&status2,0);
             if((pid3=fork()) == 0){/* Tercer Hijo */
-                printf("Soy el tercer hijo U%d, hijo de %d\n", getpid(), getppid());
+                printf("Soy el tercer hijo U %d, hijo de %d\n", getpid(), getppid());
             }
             else{ /* padre */
 
